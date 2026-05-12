@@ -1,4 +1,4 @@
-# QUB Humanoid Project
+# QUB : Quasi-directive-drive Used Bipedal robot
 
 > 13 DOF 청소년 크기 휴머노이드 로봇 **QUB v1.2**의 설계부터 강화학습 기반 보행 제어, 그리고 실제 하드웨어 배포까지의 통합 기록.
 
@@ -48,7 +48,7 @@ QUB_URDF → QUB_RL_tron1 → ONNX → QUB_Controller → CAN bus → QUB v1.2
 
 ### Phase 1 — 하드웨어 설계 (2명)
 - **Jaebin Ahn** (본인) — 프로젝트 총괄, 기구 설계, URDF 작업, 시뮬레이션 검증
-- **[채우주]** — 기구 설계
+- **[]** — 기구 설계
 
 ### Phase 2 — 배선 · 제어 · 강화학습 (6명)
 - **Jaebin Ahn** (본인) — 프로젝트 총괄, RL 학습 (Isaac Gym), C++ 실시간 제어기 설계 및 구현, sim-to-real 파이프라인
