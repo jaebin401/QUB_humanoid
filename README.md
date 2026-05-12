@@ -71,8 +71,8 @@ KUDOS 로봇 동아리 · Apple Developer Academy
 목표: 로봇 연구원. 학부 마치고 대학원 진학 계획.
 
 - GitHub: [@jaebin401](https://github.com/jaebin401)
-- Instagram: [@통학하는 공대생](https://www.instagram.com/study_4_machine/)
-- LinkedIn: [Jaebin Ahn](www.linkedin.com/in/jaebin-272ba8366)
+- Instagram: [통학하는 공대생](https://www.instagram.com/study_4_machine/)
+- LinkedIn: [Jaebin Ahn](https://www.linkedin.com/in/jaebin-272ba8366)
 
 ---
 
