@@ -1,4 +1,4 @@
-# QUB : Quasi-directive-drive Used Bipedal robot
+# QUB : Quasi-directive-drive actuator Used Bipedal robot
 
 > 13 DOF 청소년 크기 휴머노이드 로봇 **QUB v1.2**의 설계부터 강화학습 기반 보행 제어, 그리고 실제 하드웨어 배포까지의 통합 기록.
 
