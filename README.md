@@ -27,6 +27,7 @@ KUDOS 로봇 동아리에서 진행 중인 학부 연구 프로젝트로, Sim-to
 | [QUB_RL](https://github.com/jaebin401/QUB_RL) | RL 학습 v1 (frozen, 참조용) | [humanoid-gym](https://github.com/roboterax/humanoid-gym) |
 | [QUB_RL_tron1](#) | RL 학습 v2 (active development) | [tron1-rl-isaacgym](https://github.com/limxdynamics/tron1-rl-isaacgym) |
 | [QUB_Controller](#) | 실시간 C++ 하위 제어기 | — |
+| [Robstride-Study](https://github.com/jaebin401/Robstride-Study) | Robstride 액추에이터 제어 스터디 | [Robstride_Control](https://github.com/Seeed-Projects/RobStride_Control)| 
 
 각 레포의 상세 내용과 진행 기록은 해당 레포의 README를 참고해 주세요.
 
@@ -86,10 +87,12 @@ KUDOS 로봇 동아리 · Apple Developer Academy
 
 본 프로젝트는 다음 오픈소스 작업들에 기반하고 있습니다.
 
+- [Robstride_Control](https://github.com/Seeed-Projects/RobStride_Contro - seeed studio
 - [Isaac Gym](https://developer.nvidia.com/isaac-gym) — NVIDIA
 - [legged_gym](https://github.com/leggedrobotics/legged_gym) — ETH Zurich Robotic Systems Lab
 - [rsl_rl](https://github.com/leggedrobotics/rsl_rl) — ETH Zurich Robotic Systems Lab
 - [humanoid-gym](https://github.com/roboterax/humanoid-gym) — Robot Era / Tsinghua / Shanghai Qi Zhi Institute
 - [tron1-rl-isaacgym](https://github.com/limxdynamics/tron1-rl-isaacgym) — LimX Dynamics
 
-또한 KUDOS 로봇 동아리 구성원들과 적극적으로 도움 주신 RCLab휴머노이드 분야의 석사 멘토분들, 그리고 조백규 교수님께 감사드립니다.
+또한 적극적으로 도움 주신 RCLab휴머노이드 분야의 석사 멘토분들, 
+그리고 누구보다 성심껏 지도 해 주시고, 자원들을 제공 해 주신 조백규 교수님께 감사드립니다.
