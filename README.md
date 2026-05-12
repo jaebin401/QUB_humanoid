@@ -25,7 +25,7 @@ KUDOS 로봇 동아리에서 진행 중인 학부 연구 프로젝트로, Sim-to
 |---|---|---|
 | [QUB_URDF](https://github.com/jaebin401/QUB_URDF) | 로봇 형상 정보 (URDF + mesh) | — |
 | [QUB_RL](https://github.com/jaebin401/QUB_RL) | RL 학습 v1 (frozen, 참조용) | [humanoid-gym](https://github.com/roboterax/humanoid-gym) |
-| [QUB_RL_tron1](#) | RL 학습 v2 (active development) | [tron1-rl-isaacgym](https://github.com/limxdynamics/tron1-rl-isaacgym) |
+| [QUB_RL_v2](#) | RL 학습 v2 (active development) | [tron1-rl-isaacgym](https://github.com/limxdynamics/tron1-rl-isaacgym) |
 | [QUB_Controller](#) | 실시간 C++ 하위 제어기 | — |
 | [Robstride-Study](https://github.com/jaebin401/Robstride-Study) | Robstride 액추에이터 제어 스터디 | [Robstride_Control](https://github.com/Seeed-Projects/RobStride_Control)| 
 
