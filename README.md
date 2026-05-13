@@ -87,7 +87,7 @@ KUDOS 로봇 동아리 · Apple Developer Academy
 
 본 프로젝트는 다음 오픈소스 작업들에 기반하고 있습니다.
 
-- [Robstride_Control](https://github.com/Seeed-Projects/RobStride_Contro - seeed studio
+- [Robstride_Control](https://github.com/Seeed-Projects/RobStride_Control) - seeed studio
 - [Isaac Gym](https://developer.nvidia.com/isaac-gym) — NVIDIA
 - [legged_gym](https://github.com/leggedrobotics/legged_gym) — ETH Zurich Robotic Systems Lab
 - [rsl_rl](https://github.com/leggedrobotics/rsl_rl) — ETH Zurich Robotic Systems Lab
