@@ -1,5 +1,7 @@
 # QUB : Quasi-directive-drive actuator Used Bipedal robot
 
+![QUB_v1.2](QUB%20v1.2%20image.png)
+
 > 13 DOF 청소년 크기 휴머노이드 로봇 **QUB v1.2**의 설계부터 강화학습 기반 보행 제어, 그리고 실제 하드웨어 배포까지의 통합 기록.
 
 KUDOS 로봇 동아리에서 진행 중인 학부 연구 프로젝트로, Sim-to-Real RL locomotion을 목표로 합니다. 본 레포지토리는 프로젝트 전반의 진입점이자 하위 레포들을 묶는 우산(umbrella) 역할입니다.
