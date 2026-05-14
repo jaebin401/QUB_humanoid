@@ -71,7 +71,7 @@ QUB_URDF → QUB_RL_tron1 → ONNX → QUB_Controller → CAN bus → QUB v1.2
 학부 기계공학 전공 / 소프트웨어 부전공  
 KUDOS 로봇 동아리 · Apple Developer Academy
 
-목표: 로봇 연구원. 학부 마치고 대학원 진학 계획.
+목표: 로봇 연구원. 학부 졸업 후 관련분야 대학원 진학 계획.
 
 - GitHub: [@jaebin401](https://github.com/jaebin401)
 - Instagram: [통학하는 공대생](https://www.instagram.com/study_4_machine/)
