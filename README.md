@@ -11,21 +11,14 @@
 
 ![QUB_v1.2](QUB%20v1.2%20image.png)
 
-QUB is an undergraduate project developed by the KUDOS Robotics Club to integrate mechanical design, reinforcement-learning-based locomotion, real-time motor control, and Sim-to-Real deployment into a single robotic system.
-
-## Project Status
-
-> **Archived — August 2026**
->
-> Development of QUB was discontinued before final actuation and physical walking validation. Nevertheless, the project covered 13-DOF mechanical design, URDF-based simulation, reinforcement learning environment development and divergence diagnosis, real-time control, and IMU integration. Each repository is organized to share the design decisions, failed approaches, validation methods, and technical lessons learned throughout the process.
-
+QUB is an undergraduate project developed by the KUDOS Robotics Club to combine mechanical design, reinforcement-learning-based locomotion, real-time controller development, and sim-to-real pipeline development in a single robotic platform.
 
 ## Overview
 
-- **Robot**: QUB v1.2 — 13-DOF biped (12 leg joints + `torso_yaw`), without arms or a head
-- **Height / mass**: Approximately 100cm / 20kg
-- **Actuators**: RobStride RS02 / RS03 / RS04 (CAN 2.0, 1Mbps)
-- **Main computer**: Intel NUC 11 (Ubuntu Pro 22.04 + PREEMPT-RT)
+- **Robot**: QUB v1.2 — 13-DOF lower-body bipedal platform (12 leg joints + `torso_yaw`)
+- **Height / mass**: Approximately 1.0 m / 20 kg
+- **Actuators**: RobStride RS02 / RS03 / RS04 (CAN 2.0, 1 Mbps)
+- **Main computer**: Intel NUC 11 (Ubuntu 22.04 with a PREEMPT_RT kernel)
 - **CAN interface**: PEAK PCAN-M.2, 4 channels
 - **IMU**: MicroStrain 3DM-CV7-AHRS
 - **Simulator**: NVIDIA Isaac Gym for reinforcement learning
@@ -33,7 +26,14 @@ QUB is an undergraduate project developed by the KUDOS Robotics Club to integrat
 
 Because standard URDF does not directly support closed-loop kinematic chains, the knee four-bar linkage and parallel ankle mechanism were modeled as equivalent single revolute joints.
 
+## Key Contributions
+
+- Led the mechanical design, fabrication, and assembly of the 13-DOF platform, including its joint mechanisms and CAD-to-URDF conversion.
+- Designed and implemented a C++17 real-time controller architecture for 13 RobStride actuators across four CAN channels, including 500 Hz motor-control threads and MicroStrain 3DM-CV7-AHRS integration.
+- Adapted Isaac Gym-based open-source locomotion frameworks to the custom QUB model, ran PPO training experiments, and investigated training divergence and a standing-still local optimum.
+
 ## Explore the Project
+
 This repository serves as the entry point for QUB's design, implementation, diagnostics, and technical lessons. Detailed work is documented in the repositories below, separated by engineering domain.
 
 
@@ -43,9 +43,15 @@ This repository serves as the entry point for QUB's design, implementation, diag
 | [QUB_RL](https://github.com/jaebin401/QUB_RL) | RL v1 based on `humanoid-gym` | Archived / Reference |
 | [QUB_RL_v2](https://github.com/jaebin401/QUB_RL_v2) | RL environment and stability experiments based on `tron1-rl-isaacgym` | Archived |
 | [QUB_Controller](https://github.com/jaebin401/QUB_Controller) | Real-time C++ control, CAN, and IMU integration | Archived |
-| [Robstride-Study](https://github.com/jaebin401/Robstride-Study) | RobStride CAN protocol study and early experiments | Reference |
+| [RobStride CAN Study](https://github.com/jaebin401/Robstrid-CAN_study) | RobStride CAN protocol study and early experiments | Reference |
 
 See each repository's README for implementation details and development records.
+
+## Project Outcome
+
+> **Archived — August 2026**
+
+The formal team project concluded in May 2026, followed by final hardware diagnostics and repository archival through August 2026. The project reached 13-DOF mechanical design, URDF-based simulation, reinforcement learning environment development, real-time controller implementation, and hardware validation of the IMU. Development concluded before full-motor actuation and physical walking validation.
 
 ## Validation Status
 
@@ -54,17 +60,13 @@ See each repository's README for implementation details and development records.
 | 13-DOF mechanical design | Complete QUB v1.2 structure and joint mechanisms | Completed |
 | URDF and simulation | Isaac Gym import and dynamics experiments | Completed |
 | RL walking | v1 and v2 environments, including divergence analysis | Incomplete |
-| Real-time motor controller | Four-channel 500Hz architecture and RobStride protocol | Implemented; full hardware validation incomplete |
+| Real-time motor controller | Four-channel 500 Hz architecture and RobStride protocol | Implemented; full hardware validation incomplete |
 | IMU integration | MicroStrain CV7-AHRS data acquisition and orientation response | Validated on hardware |
 | Full motor connectivity | Responses confirmed from 3 of 13 motors | Incomplete |
-| ONNX policy integration | 50Hz policy thread design | Planned |
+| ONNX policy integration | 50 Hz policy thread design | Planned |
 | Sim-to-Real walking | Walking on physical hardware | Not achieved |
 
-
-The project reached URDF-based simulation, RL environment development, the core real-time controller architecture, and CV7-AHRS integration. A stable walking policy, ONNX policy integration, and physical hardware walking were not completed.
-
-
-## Hardware Validation and Final Blocker
+## Limitations and Final Blocker
 
 During on-site testing in July 2026, quaternion, angular-rate, and acceleration data from the CV7-AHRS were successfully received and verified on the target Intel NUC.
 
@@ -83,12 +85,12 @@ The project proceeded in two phases with different team structures.
 
 ### Phase 2 — Wiring, Control, and Reinforcement Learning
 
-- **Jaebin Ahn** — Project lead, RL training in Isaac Gym, real-time C++ controller design and implementation, Sim-to-Real pipeline, repository management, and documentation
-- **김정환** — QUB hardware modifications and URDF development
-- **김현기** — Reinforcement learning
-- **안희찬** — Reinforcement learning
-- **이윤재** — Reinforcement learning
-- **황준모** — Isaac Gym locomotion training and divergence debugging, MuJoCo C++ validation controller, and Sim-to-Sim integration testing
+- **Jaebin Ahn** — Project lead, RL training in Isaac Gym, real-time C++ controller design and implementation, sim-to-real pipeline development, repository management, and documentation
+- **Jeonghwan Kim (김정환)** — QUB hardware modifications and URDF development
+- **Hyunki Kim (김현기)** — Reinforcement learning
+- **Heechan Ahn (안희찬)** — Reinforcement learning
+- **Yoonjae Lee (이윤재)** — Reinforcement learning
+- **Junmo Hwang (황준모)** — Isaac Gym locomotion training and divergence debugging, MuJoCo C++ validation controller, and Sim-to-Sim integration testing
 
 
 ## Author and Project Lead
@@ -97,7 +99,7 @@ The project proceeded in two phases with different team structures.
 Undergraduate student in Mechanical Engineering with a minor in Software<br>
 KUDOS Robotics Club · Apple Developer Academy @ POSTECH
 
-Goal: robotics researcher. Planning to pursue graduate studies in robotics after completing my undergraduate degree.
+Research interests: legged locomotion, whole-body control, and the integration of model-based and learning-based control.
 
 - GitHub: [@jaebin401](https://github.com/jaebin401)
 - Instagram: [@study_4_machine](https://www.instagram.com/study_4_machine/)
